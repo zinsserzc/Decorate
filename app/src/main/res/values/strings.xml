@@ -1,3 +1,72 @@
 <resources>
-    <string name="app_name">Decorate</string>
+    <string name="app_name">管理</string>
+    <string name="bt1">关机</string>
+    <string name="bt2">重启</string>
+    <string name="manager">管理</string>
+    <string name="jd">我的京东</string>
+    <string name="list1">第一行第一列</string>
+    <string name="desc">desc</string>
+    <string name="zy">作业</string>
+    <string name="zl">总览</string>
+    <string name="jk">监控</string>
+    <string name="gl">管理</string>
+    <string name="sz">设置</string>
+
+    <!-- 集群总览 -->
+    <string name="turn_on_time">开机时间：</string>
+    <string name="running_time">运行时间：</string>
+    <string name="day">天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分</string>
+    <string name="disk">磁盘</string>
+    <string name="memory">内存</string>
+    <string name="temperature">温度</string>
+    <string name="fault">故障</string>
+    <string name="message">消息</string>
+    <string name="host_name">主机名：</string>
+    <string name="ip_address">IP地址：</string>
+    <string name="mac_address">MAC地址：</string>
+    <string name="host">主机：   </string>
+    <string name="node">节点：   </string>
+    <string name="GPU">GPU：   </string>
+    <string name="switchboard">交换机： </string>
+    <string name="UPS">UPS： </string>
+    <string name="storage">存储： </string>
+    <string name="work">作业：</string>
+    <string name="running">运行：</string>
+    <string name="waiting">等待：</string>
+    <string name="CPU_name">CPU名称：</string>
+    <string name="dominant_frequency">主频：</string>
+    <string name="core_count">核数：</string>
+    <string name="memory_type">内存型号：</string>
+    <string name="size">大小：</string>
+    <string name="hard_type">硬盘型号：</string>
+    <string name="Mount">Mount</string>
+    <string name="Used">Used</string>
+    <string name="Size">Size</string>
+    <string name="usage_percent">Usage%</string>
+    <string name="cpu_use">CPU利用率：</string>
+    <string name="ram_use">RAM利用率：</string>
+
+    <!--管理-->
+    <string name="user_count">用户总数：</string>
+    <!--监控-->
+    <string name="node_monitor">节点</string>
+    <string name="core_used">已用核数</string>
+    <string name="core_free">可用核数</string>
+    <string name="node_free">空闲节点：</string>
+    <string name="node_busy">忙节点：</string>
+    <string name="node_down">无响应节点：</string>
+    <string name="node_exclusive">负载节点：</string>
+
+    <!--登录-->
+    <string name="idtxthint">用户名</string>
+    <string name="pwdtxthint">密码</string>
+    <string name="loginbtntext">登录</string>
+    <string name="forgot_pwd">忘记密码？</string>
+    <string name="loading">正在登录</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
