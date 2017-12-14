@@ -36,8 +36,10 @@
         <activity
             android:name=".activities.CheckActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.FindDesignerActivity" />
-        <activity android:name=".activities.FindWorkerActivity"></activity>
+        <activity android:name=".activities.FindDesignerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.FindWorkerActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
