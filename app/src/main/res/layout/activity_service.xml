@@ -1,29 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zc.decorate.fragments.PictureFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zc.decorate.activities.ServiceActivity"
     android:orientation="vertical">
-
+    <com.zc.decorate.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:myTitle="家装服务"></com.zc.decorate.ui.TitleView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:orientation="horizontal"
+        android:layout_weight="3"
         android:background="@drawable/bg_button_border">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="户型选择"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="风格选择"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动内容"/>
 
     </LinearLayout>
 
@@ -31,7 +29,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="11"
         android:orientation="vertical">
 
         <LinearLayout
@@ -47,22 +45,12 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_button_border">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/img_easy"
-                    />
                 <TextView
-                    android:text="户型：小"
+                    android:text="套餐："
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="风格：简约"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="总价：20000元"
+                    android:text="价格：20000元"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -75,35 +63,23 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_button_border">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/img_elegant"
-                    />
                 <TextView
-                    android:text="户型：小"
+                    android:text="套餐："
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="风格：优雅"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="总价：25000元"
+                    android:text="价格：20000元"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
 
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
+            <!--简约-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -111,26 +87,17 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_button_border">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/img_pure"
-                    />
                 <TextView
-                    android:text="户型：大"
+                    android:text="套餐："
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="风格：纯净"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="总价：30000元"
+                    android:text="价格：20000元"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
+            <!--优雅-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -138,29 +105,17 @@
                 android:orientation="vertical"
                 android:background="@drawable/bg_button_border">
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/img_useful"
-                    />
                 <TextView
-                    android:text="户型：大"
+                    android:text="套餐："
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="风格：实用"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:text="总价：30000元"
+                    android:text="价格：20000元"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
-
-
 
 </LinearLayout>

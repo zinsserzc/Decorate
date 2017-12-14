@@ -1,13 +1,222 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zc.decorate.fragments.CalculateFragment">
+    tools:context="com.zc.decorate.fragments.CalculateFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_ground_brick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_ground_brick"/>
+            <TextView
+                android:layout_below="@+id/bt_ground_brick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="地砖"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_wall_brick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_wall_brick"/>
+            <TextView
+                android:layout_below="@+id/bt_wall_brick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="墙砖"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/main_color">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_cal_price"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="计算地砖价格"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_cal_count"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计算地砖数量"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_ground"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_ground"/>
+            <TextView
+                android:layout_below="@+id/bt_ground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="地板"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_wall_paper"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_wall_paper"/>
+            <TextView
+                android:layout_below="@+id/bt_wall_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="壁纸"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_coating"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_coating"/>
+            <TextView
+                android:layout_below="@+id/bt_coating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="涂料"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_border">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_curtain"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_curtain"/>
+            <TextView
+                android:layout_below="@+id/bt_curtain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="窗帘"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></LinearLayout>
+
+
+
+</LinearLayout>

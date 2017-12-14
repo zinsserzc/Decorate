@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zc.decorate.activities.StrategyActivity"
+    android:orientation="vertical">
+
+    <com.zc.decorate.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:myTitle="装修攻略"></com.zc.decorate.ui.TitleView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_button_border">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_stragegy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_strategy"/>
+            <TextView
+                android:layout_below="@+id/bt_stragegy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="新手攻略"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_wind_water"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_wind_water"/>
+            <TextView
+                android:layout_below="@+id/bt_wind_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="找设计"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_model"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_model"/>
+            <TextView
+                android:layout_below="@+id/bt_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="找设计"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/bt_resource"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_resource"/>
+            <TextView
+                android:layout_below="@+id/bt_resource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="找设计"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="装修流程:"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>
